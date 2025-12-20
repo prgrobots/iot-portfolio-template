@@ -5,7 +5,7 @@
 > **This is a template repository.** Click "Use this template" to create your own portfolio repo.
 
 
-<img src="image.png" alt="alt text" width="50%">
+<img src="image.png" alt="alt text" width="50%" >
 
 ---
 
