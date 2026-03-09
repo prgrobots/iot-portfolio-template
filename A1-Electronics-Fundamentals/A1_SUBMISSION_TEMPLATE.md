@@ -1,6 +1,6 @@
 	# Assessment Submission Portfolio
 
-**Assessment A1: Sensor Integration (Environmental Monitoring)**  
+**Assessment A1: Engine Compartment Monitor (Temperature & Status Display)**  
 **Due:** Week 4 | **Weight:** 10%
 
 ---
@@ -18,7 +18,7 @@
 
 ## Introduction
 
-This assessment submission form documents the completion of Assessment A1 (Sensor Integration). Your code and project work must be completed and committed to your GitHub portfolio repository in the `/A1-Electronics-Fundamentals/` folder.
+This assessment submission form documents the completion of Assessment A1 (Engine Compartment Monitor). Your code and project work must be completed and committed to your GitHub portfolio repository in the `/A1-Electronics-Fundamentals/` folder.
 
 **Important:** This form is for submission evidence only. Your actual code stays on GitHub.
 
@@ -28,24 +28,25 @@ This assessment submission form documents the completion of Assessment A1 (Senso
 
 ### Assessment Overview
 
-Build an IoT device with environmental monitoring using the following sensors:
-- **DHT11** temperature/humidity sensor
-- **MQ-2** gas/smoke sensor
-- **Flame sensor** for fire detection
-- Serial output with sensor readings and threshold detection logic
+Build an IoT device with temperature monitoring and status display using the following:
+- **Thermistor (NTC 10kΩ)** for analog temperature sensing
+- **RGB LED** for colour-coded status display (green/yellow/red)
+- Temperature-to-colour mapping logic
+- Serial output with temperature readings and colour state
 
 ### How to Complete This Assessment
 
-1. Complete all sensor code in your `/A1-Electronics-Fundamentals/code/esp32-arduino/` folder
-2. Test sensors on breadboard or Wokwi simulation
+1. Complete thermistor and RGB LED code in your `/A1-Electronics-Fundamentals/code/esp32-arduino/` folder
+2. Test on breadboard or Wokwi simulation
 3. Commit all files to GitHub
 4. Fill out this form with your submission details
 5. Copy completed form into Blackboard by the due date
 
 ### What to Submit on GitHub
 
-- ✅ Arduino `.ino` file with DHT11, MQ-2, and flame sensor code
-- ✅ README.md describing sensors, pins, and threshold logic
+- ✅ Arduino `.ino` file with thermistor reading and RGB LED control code
+- ✅ Wiring diagram (Fritzing export or hand-drawn schematic)
+- ✅ README.md describing thermistor wiring, ADC conversion, and colour logic
 - ✅ Wokwi simulation link OR breadboard photo
 
 ---
@@ -56,7 +57,7 @@ Build an IoT device with environmental monitoring using the following sensors:
 |-------|---------|
 | **Student Name** | [Your full name] |
 | **Student ID** | [Your student/enrollment ID] |
-| **Assessment** | A1 – Sensor Integration |
+| **Assessment** | A1 – Engine Compartment Monitor |
 | **Submission Date** | [Date submitted to Blackboard] |
 
 ---
@@ -75,7 +76,7 @@ Build an IoT device with environmental monitoring using the following sensors:
 ### Work Completed
 
 **Brief Description:**  
-Describe which sensors you integrated, what values they read, and what threshold logic you implemented.
+Describe which temperature range you achieved, what colours the LED displayed at each range, and any challenges with thermistor calibration.
 
 [Your description here - 2-3 sentences]
 
@@ -87,11 +88,11 @@ Describe which sensors you integrated, what values they read, and what threshold
 
 | Requirement | Evidence Provided | Location in Repository |
 |-------------|-------------------|------------------------|
-| Arduino `.ino` file with all 3 sensors | ☐ Included | `/A1-Electronics-Fundamentals/code/esp32-arduino/` |
-| DHT11 temperature/humidity readings | ☐ Working | Serial output in code |
-| MQ-2 gas sensor readings | ☐ Working | Serial output in code |
-| Flame sensor detection | ☐ Working | Serial output in code |
-| Threshold detection logic | ☐ Included | Code comments explain thresholds |
+| Arduino `.ino` file with thermistor and RGB LED code | ☐ Included | `/A1-Electronics-Fundamentals/code/esp32-arduino/` |
+| Thermistor ADC reading and temperature conversion | ☐ Working | Serial output in code |
+| RGB LED PWM control | ☐ Working | analogWrite() in code |
+| Temperature-to-colour mapping logic | ☐ Included | Code comments explain thresholds |
+| Wiring diagram | ☐ Included | Fritzing file or image in folder |
 | Assessment README.md | ☐ Included | `/A1-Electronics-Fundamentals/README.md` |
 
 ### Hardware Evidence
@@ -116,11 +117,13 @@ Confirm all requirements completed before submitting:
 
 | Requirement | Completed |
 |-------------|-----------|
-| DHT11 sensor reads temperature and humidity | ☐ |
-| MQ-2 sensor reads gas/smoke levels | ☐ |
-| Flame sensor detects flame presence | ☐ |
-| Serial output displays all sensor readings | ☐ |
-| Threshold detection logic implemented (e.g., temp > 50°C) | ☐ |
+| Thermistor sensor reads temperature correctly | ☐ |
+| Thermistor ADC values convert to °C via formula | ☐ |
+| RGB LED displays green for normal temperature | ☐ |
+| RGB LED displays yellow for warning temperature | ☐ |
+| RGB LED displays red for critical temperature | ☐ |
+| Serial output displays temperature readings | ☐ |
+| Wiring diagram included and accurate | ☐ |
 | Code is clean and commented | ☐ |
 | GitHub repository is accessible | ☐ |
 | Assessment README documents the work | ☐ |
@@ -139,8 +142,9 @@ Confirm all requirements completed before submitting:
 By submitting this form, I confirm that:
 
 - ☐ All code in my A1 folder is my own work
-- ☐ Sensors are correctly wired and functional
-- ☐ All required sensors are integrated
+- ☐ Thermistor is correctly wired and functional
+- ☐ RGB LED is correctly wired and functional
+- ☐ Temperature-to-colour mapping logic is working
 - ☐ Code follows ICTIOT502 assessment requirements
 - ☐ I have not plagiarized or breached academic integrity
 

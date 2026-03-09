@@ -48,7 +48,7 @@ your-portfolio/
 │
 ├── A1-Electronics-Fundamentals/       # Week 4 Assessment
 │   ├── code/
-│   │   ├── esp32-arduino/             # REQUIRED: DHT11, MQ-2, flame sensor code
+│   │   ├── esp32-arduino/             # REQUIRED: Thermistor, RGB LED colour-coded status display
 │   │   └── pico-micropython/          # OPTIONAL: Python equivalents
 │   └── README.md
 │
@@ -133,7 +133,7 @@ Edit `README.md` with your student details:
 
 | Assessment | Due | What You Build |
 |-----------|-----|----------------|
-| **A1** | Week 4 | Environmental sensors (DHT11, MQ-2, flame detector) |
+| **A1** | Week 4 | Engine Compartment Monitor (thermistor + RGB LED colour display) |
 | **A2** | Week 6 | RFID access control + RTC logging |
 | **A3** | Week 8 | Vibration monitoring (GY-521 accelerometer) |
 | **A4** | Week 9 | Complete haul truck integration |
