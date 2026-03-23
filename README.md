@@ -23,20 +23,20 @@ This portfolio documents your journey through an 18-week IoT course:
 
 ## Hardware Platforms
 
-### **ESP32 (Arduino C++) – REQUIRED**
-- Primary platform for all assessments
-- Language: **Arduino (C++)**
+### **ESP32 (C++ / Arduino IDE) – REQUIRED**
+- Primary platform for A1, A2, A4, A5, A6
+- Language: **C++ (Arduino IDE)**
 - Use cases: Real-time sensor reading, RFID, WiFi connectivity, AWS IoT
 - Code folder: `*/code/esp32-arduino/`
 
-### **Raspberry Pi Pico W (MicroPython) – OPTIONAL**
-- Optional secondary platform for advanced learners
+### **Raspberry Pi Pico W (MicroPython) – REQUIRED for A3**
+- Pre-assembled carrier board with OLED + MPU6050 soldered on
 - Language: **MicroPython**
-- Use cases: Cloud connectivity, data processing, prototyping, algorithm exploration
-- Code folder: `*/code/pico-micropython/` (include if you choose this path)
-- **Recommended if:** You have Python background, want to explore a second platform, or want to demonstrate versatility
+- Use cases: Signal processing, vibration analysis, accelerometer filtering
+- Code folder: `*/code/pico-micropython/`
+- **Why required:** The training package requires you to program **2 devices**. The Pico W carrier board is your second device and is assessed in A3.
 
-**Your Choice:** You can complete the entire course with Arduino only. MicroPython is encouraged but completely optional – choose what interests you.
+**Your Choice:** You may also use MicroPython for other assessments if you prefer — but the Pico W is specifically required for A3.
 
 ---
 
